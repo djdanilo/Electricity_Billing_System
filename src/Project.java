@@ -235,10 +235,10 @@ public class Project extends JFrame implements ActionListener {
         if (msg.equals("Customer details")) {
             new CustomerDetails().setVisible(true);
         }
-        else if (msg.equals("New customer")) {
+        else if (msg.equals("New Customer")) {
             new NewCustomer().setVisible(true);
         }
-        else if (msg.equals("Calculate bills")) {
+        else if (msg.equals("Calculate bill")) {
             new CalculateBill().setVisible(true);
         }
         else if(msg.equals("Pay bill")) {
@@ -266,6 +266,7 @@ public class Project extends JFrame implements ActionListener {
             }
         }
         else if (msg.equals("Logout")) {
+            System.out.println("testing");
             this.setVisible(false);
             new Login().setVisible(true);
         }
